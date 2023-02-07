@@ -1,43 +1,49 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../logo.svg';
-import './navbar.css';
+import styles from './navbar.module.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="gpt3__navbar">
-      <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">
-          <img src={logo} />
+    <div className={styles.navbar}>
+      <div className={styles.navbarLinks}>
+        <div className={styles.navbarLinks_logo}>
+        <Image
+          src="/logo.svg"
+          alt="GPT3 Logo"
+          width={62.56}
+          height={16.02}
+          priority
+        />
         </div>
-        <div className="gpt3__navbar-links_container">
-          <p><a href="#home">Home</a></p>
+        <div className={styles.navbarLinks_container}>
+          <p><a href="#landing">landing</a></p>
           <p><a href="#wgpt3">What is GPT3?</a></p>
           <p><a href="#possibility">Open AI</a></p>
           <p><a href="#features">Case Studies</a></p>
           <p><a href="#blog">Library</a></p>
         </div>
       </div>
-      <div className="gpt3__navbar-sign">
+      <div className={styles.navbarSign}>
         <p>Sign in</p>
         <button type="button">Sign up</button>
       </div>
-      <div className="gpt3__navbar-menu">
+      <div className={styles.navbarMenu}>
         {toggleMenu
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
         {toggleMenu && (
-        <div className="gpt3__navbar-menu_container scale-up-center">
-          <div className="gpt3__navbar-menu_container-links">
-            <p><a href="#home">Home</a></p>
+        <div className={[styles.navbarMenu_container, styles.scaleUpCenter].join(" ")}>
+          <div>
+            <p><a href="#landing">landing</a></p>
             <p><a href="#wgpt3">What is GPT3?</a></p>
             <p><a href="#possibility">Open AI</a></p>
             <p><a href="#features">Case Studies</a></p>
             <p><a href="#blog">Library</a></p>
           </div>
-          <div className="gpt3__navbar-menu_container-links-sign">
+          <div className={styles.navbarMenu_containerLinksSign}>
             <p>Sign in</p>
             <button type="button">Sign up</button>
           </div>
