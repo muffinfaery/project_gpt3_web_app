@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import styles from './navbar.module.css';
 
@@ -19,11 +20,10 @@ const Navbar = () => {
         />
         </div>
         <div className={styles.navbarLinks_container}>
-          <p><a href="#landing">landing</a></p>
-          <p><a href="#wgpt3">What is GPT3?</a></p>
-          <p><a href="#possibility">Open AI</a></p>
-          <p><a href="#features">Case Studies</a></p>
-          <p><a href="#blog">Library</a></p>
+          <p><Link href="/">Get Started</Link></p>
+          <p><Link href="/about">What is GPT3?</Link></p>
+          <p><Link href="/possibilities">Open AI</Link></p>
+          <p><Link href="/blogs">Blog</Link></p>
         </div>
       </div>
       <div className={styles.navbarSign}>
@@ -37,11 +37,10 @@ const Navbar = () => {
         {toggleMenu && (
         <div className={[styles.navbarMenu_container, styles.scaleUpCenter].join(" ")}>
           <div>
-            <p><a href="#landing">landing</a></p>
-            <p><a href="#wgpt3">What is GPT3?</a></p>
-            <p><a href="#possibility">Open AI</a></p>
-            <p><a href="#features">Case Studies</a></p>
-            <p><a href="#blog">Library</a></p>
+            <p><Link href="/">Get Started</Link></p>
+            <p><Link href="/about">What is GPT3?</Link></p>
+            <p><Link href="/possibilities">Open AI</Link></p>
+            <p><Link href="/blogs">Blog</Link></p>
           </div>
           <div className={styles.navbarMenu_containerLinksSign}>
             <p>Sign in</p>

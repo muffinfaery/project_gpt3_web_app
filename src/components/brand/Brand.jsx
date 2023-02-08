@@ -1,23 +1,48 @@
 import React from 'react';
-import { google, slack, atlassian, dropbox, shopify } from './imports';
+import Image from 'next/image';
 import styles from './brand.module.css';
 
 const Brand = () => (
-  <div className="brand section__padding">
+  <div className={[styles.brand, "section__padding"].join(" ")}>
     <div>
-      <img src={google} />
+      <Image
+          src="/google.png"
+          alt="Google Logo"
+          width={114}
+          height={25}
+        />
     </div>
     <div>
-      <img src={slack} />
+      <Image
+          src="/slack.png"
+          alt="Slack Logo"
+          width={114}
+          height={25}
+        />
     </div>
     <div>
-      <img src={atlassian} />
+      <Image
+          src="/atlassian.png"
+          alt="Atlassian Logo"
+          width={114}
+          height={25}
+        />
     </div>
     <div>
-      <img src={dropbox} />
+      <Image
+          src="/dropbox.png"
+          alt="Dropbox Logo"
+          width={114}
+          height={25}
+        />
     </div>
     <div>
-      <img src={shopify} />
+      <Image
+        src="/Shopify.png"
+        alt="Shopify Logo"
+        width={114}
+        height={25}
+      />
     </div>
   </div>
 );

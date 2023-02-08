@@ -28,6 +28,28 @@ a {
   text-decoration: none;
 }
 
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contentBoundary {
+  max-width: 1800px;
+}
+
+.pageHeading {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.pageHeading h1 {
+  font-size: 62px;
+  line-height: 75px;
+  font-family: var(--font-family);
+  font-weight: 800;
+}
 
 .gradient__bg {
   background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
@@ -100,5 +122,10 @@ a {
 
   .section__margin {
     margin: 4rem 2rem;
-  }  
+  }
+  
+  .pageHeading h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
 }

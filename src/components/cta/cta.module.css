@@ -5,34 +5,35 @@
     flex-direction: row;
 
     padding: 2rem;
-    margin: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     border-radius: 1rem;
     background: var(--gradient-bar)
 }
 
-.cta-content {
+.ctaContent {
     display: flex;
     flex-direction: column;
 
     text-align: left;
-    color: #fff;
+    color: #000;
 }
 
-.cta-content p {
+.ctaContent p {
     font-family: var(--font-family);
     font-size: 12px;
     line-height: 30px;
     font-weight: 500;
 }
 
-.cta-content h3 {
+.ctaContent h3 {
     font-family: var(--font-family);
     font-size: 24px;
     line-height: 45px;
     font-weight: 800;
 }
 
-.cta-btn {
+.ctaBtn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +41,7 @@
     margin-left: 2rem;
 }
 
-.cta-btn button {
+.ctaBtn button {
     background: #000;
     color: #fff;
     font-family: var(--font-family);
@@ -61,7 +62,7 @@
         flex-direction: column;
     }
 
-    .cta-btn {
+    .ctaBtn {
         margin: 2rem 0 0;
     }
 }
@@ -72,12 +73,12 @@
         margin: 4rem 2rem;
     }
 
-    .cta-content h3 {
+    .ctaContent h3 {
         font-size: 18px;
         line-height: 32px;
     }
 
-    .cta-btn button {
+    .ctaBtn button {
         font-size: 14px;
         line-height: 28px;
     }

@@ -5,7 +5,7 @@ import styles from './footer.module.css';
 const Footer = () => (
   <div className={[styles.footer, "section__padding"].join(" ")}>
     <div className={styles.footerHeading}>
-      <h1 className="gradient__text">Do you want to step in to the future before others</h1>
+      <h1 className="gradient__text">Step in to the future before anyone else</h1>
     </div>
 
     <div className={styles.footerBtn}>
@@ -21,7 +21,7 @@ const Footer = () => (
           height={30}
           priority
         />
-        <p>Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
+        <p>Something Something, <br /> All Rights Reserved</p>
       </div>
       <div className={styles.footerLinks_div}>
         <h4>Links</h4>
@@ -38,14 +38,14 @@ const Footer = () => (
       </div>
       <div className={styles.footerLinks_div}>
         <h4>Get in touch</h4>
-        <p>Crechterwoord K12 182 DK Alknjkcb</p>
-        <p>085-132567</p>
-        <p>info@payme.net</p>
+        <p>Something Something,</p>
+        <p>867-5309</p>
+        <p>buyme@coffee.net</p>
       </div>
     </div>
 
     <div className={styles.footerLinks_div}>
-      <p>@2021 GPT-3. All rights reserved.</p>
+      <p>@2023 Something Something. All rights reserved.</p>
     </div>
   </div>
 );

@@ -23,21 +23,21 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.whatgpt3-feature {
+.whatgpt3Feature {
     display: flex;
 }
 
 /* Customizing feature component as per needs */
-.whatgpt3-feature .features-container__feature {
+.whatgpt3Feature [class*=featureContainer__feature] {
     margin: 0;
 }
 
 /* Customizing feature component as per needs */
-.whatgpt3-feature .features-container_feature-text {
+.whatgpt3Feature [class*=featureContainer__featureText] {
     max-width: 700px;
 }
 
-.whatgpt3-heading {
+.whatgpt3Heading {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,7 +46,7 @@
     margin: 4rem 0 2rem;
 }
 
-.whatgpt3-heading h1 {
+.whatgpt3Heading h1 {
     font-size: 34px;
     line-height: 45px;
     font-weight: 800;
@@ -54,7 +54,7 @@
     max-width: 510px;
 }
 
-.whatgpt3-heading p {
+.whatgpt3Heading p {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
@@ -63,7 +63,7 @@
     cursor: pointer;
 }
 
-.whatgpt3-container {
+.whatgpt3Container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -72,7 +72,7 @@
 }
 
 /* Customizing feature component as per needs */
-.whatgpt3-container .features-container__feature {
+.whatgpt3Container [class*=featureContainer__feature] {
     flex: 1;
     margin: 1rem;
     min-width: 210px;
@@ -81,34 +81,34 @@
 }
 
 /* Customizing feature component as per needs */
-.whatgpt3-container .features-container_feature-text {
+.whatgpt3Container [class*=featureContainer__featureText] {
     margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 850px) {
-    .whatgpt3-heading {
+    .whatgpt3Heading {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 0rem;
     }
 
-    .whatgpt3-heading p {
+    .whatgpt3Heading p {
         margin-top: 1rem;
     }
 }
 
 @media screen and (max-width: 650px) {
     /* Customizing feature component as per needs */
-    .whatgpt3-feature .features-container__feature {
+    .whatgpt3Feature [class*=featureContainer__feature] {
         flex-direction: column;
     }
 
     /* Customizing feature component as per needs */
-    .whatgpt3-feature .features-container_feature-text {
+    .whatgpt3Feature [class*=featureContainer__featureText] {
         margin-top: 0.5rem;
     }
 
-    .whatgpt3-heading h1 {
+    .whatgpt3Heading h1 {
         font-size: 28px;
         line-height: 40px;
     }
@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 350px) {
     /* Customizing feature component as per needs */
-    .whatgpt3-container .features-container__feature {
+    .whatgpt3Container [class*=featureContainer__feature] {
         margin: 1rem 0;
         min-width: 100%;
     }

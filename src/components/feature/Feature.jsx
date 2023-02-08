@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './feature.module.css';
 
 const Feature = ({ title, text }) => (
-  <div className="features-container__feature">
-    <div className="features-container__feature-title">
+  <div className={styles.featureContainer__feature}>
+    <div className={styles.featureContainer__featureTitle}>
       <div />
       <h1>{title}</h1>
     </div>
-    <div className="features-container_feature-text">
+    <div className={styles.featureContainer__featureText}>
       <p>{text}</p>
     </div>
   </div>

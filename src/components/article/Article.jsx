@@ -1,12 +1,19 @@
 import React from 'react';
 import styles from './article.module.css';
+import Image from 'next/image';
 
 const Article = ({ imgUrl, date, text }) => (
-  <div className="blog-container_article">
-    <div className="blog-container_article-image">
-      <img src={imgUrl} alt="blog_image" />
+  <div className={styles.blogContainer_article}>
+    <div className={styles.blogContainer_articleImage}>
+      <Image
+          src={imgUrl}
+          alt="blog_image"
+          width={325}
+          height={130}
+          priority
+        />
     </div>
-    <div className="blog-container_article-content">
+    <div className={styles.blogContainer_articleContent}>
       <div>
         <p>{date}</p>
         <h3>{text}</h3>

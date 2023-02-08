@@ -17,17 +17,17 @@ const featuresData = [
   },
   {
     title: 'Really boy law county',
-    text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..',
+    text: 'Really boy law county she unable her sister. Feet you off its like like six. Among are leave law built now. In built table in an rapid blush..',
   },
 ];
 
 const Features = () => (
-  <div className="features section__padding" id="features">
-    <div className="features-heading">
+  <div className={[styles.features, "section__padding"].join(" ")} id="features">
+    <div className={styles.featuresHeading}>
       <h1 className="gradient__text">The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.</h1>
       <p>Request Early Access to Get Started</p>
     </div>
-    <div className="features-container">
+    <div className={styles.featuresContainer}>
       {featuresData.map((item, index) => (
         <Feature title={item.title} text={item.text} key={item.title + index} />
       ))}
