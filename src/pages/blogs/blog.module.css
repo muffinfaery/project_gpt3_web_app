@@ -35,11 +35,25 @@
     grid-gap: 2rem;
 }
 
+.blogPost_article {
+    background: var(--color-footer);
+    padding: 2rem;
+}
+
+.blogPost_article img {
+    float: left;
+    margin: 1rem;
+}
+
+.blogPost_article p {
+    text-align: justify;
+    color: #FFF;
+}
+
 @media screen and (max-width: 990px) {
     .blogContainer {
         flex-direction: column-reverse;
     }
-
 
     .blogContainer_groupA {
         margin: 2rem 0;
@@ -51,6 +65,16 @@
 
     .blogContainer_groupA [class*=blogContainer_articleImage] {
         height: 250px;
+    }
+
+    .blogPost_article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogPost_article img {
+        margin-bottom: 2rem;
+        align-self: center;
     }
 }
 

@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
-import { Brand, Navbar } from '@/components'
+import { Navbar } from '@/components'
 
 import { Manrope } from '@next/font/google'
 
@@ -17,7 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className='contentBoundary'>
         <Navbar />
         <Component {...pageProps} />
-        <Brand />
         <Footer />
       </div>
     </main>

@@ -1,4 +1,3 @@
-export * from './blog';
 export * from './features';
 export * from './footer';
 export * from './landing';
