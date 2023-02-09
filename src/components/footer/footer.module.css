@@ -34,12 +34,12 @@
     cursor: pointer;
 }
 
-.footerBtn p {
+.footerBtn a {
     font-size: 18px;
     font-family: var(--font-family);
     line-height: 21px;
-    color: #fff;
     word-spacing: 2px;
+    color:#fff;
 }
 
 .footerLinks {

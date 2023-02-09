@@ -28,14 +28,16 @@ a {
   text-decoration: none;
 }
 
-main{
+main {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .contentBoundary {
   max-width: 1800px;
+  margin: auto;
 }
 
 .pageHeading {

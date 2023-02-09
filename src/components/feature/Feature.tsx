@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './feature.module.css';
-import { Feature } from '@/interfaces';
-const Feature = (props: Feature) => {
+import { IFeature } from '@/interfaces';
+const Feature = (props: IFeature) => {
 
   const { title, text } = props;
 

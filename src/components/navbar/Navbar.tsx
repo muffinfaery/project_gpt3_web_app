@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className={styles.navbarLinks_container}>
           <p><Link href="/">Get Started</Link></p>
           <p><Link href="/about">What is GPT3?</Link></p>
-          <p><Link href="/possibilities">Open AI</Link></p>
+          <p><Link href="/possibility">Possibility</Link></p>
           <p><Link href="/blogs">Blog</Link></p>
         </div>
       </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
           <div>
             <p><Link href="/">Get Started</Link></p>
             <p><Link href="/about">What is GPT3?</Link></p>
-            <p><Link href="/possibilities">Open AI</Link></p>
+            <p><Link href="/possibility">Possibility</Link></p>
             <p><Link href="/blogs">Blog</Link></p>
           </div>
           <div className={styles.navbarMenu_containerLinksSign}>

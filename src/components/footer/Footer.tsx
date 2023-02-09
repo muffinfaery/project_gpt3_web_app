@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './footer.module.css';
 
 const Footer = () => (
@@ -9,7 +10,7 @@ const Footer = () => (
     </div>
 
     <div className={styles.footerBtn}>
-      <p>Request Early Access</p>
+      <Link href="/" legacyBehavior><a>Request Early Access</a></Link>
     </div>
 
     <div className={styles.footerLinks}>

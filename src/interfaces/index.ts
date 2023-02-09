@@ -1,4 +1,4 @@
-export type Blog = {
+export type IBlog = {
   id: string,
   title: string,
   imageUrl: string,
@@ -7,13 +7,13 @@ export type Blog = {
   date: string
 }
 
-export type Feature = {
+export type IFeature = {
   id: string,
   title: string, 
   text: string
 }
 
   
-export type ResponseError = {
+export type IResponseError = {
     message: string
 }

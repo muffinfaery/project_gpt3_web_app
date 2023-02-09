@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './cta.module.css';
 
 const CTA = () => (
@@ -8,7 +9,7 @@ const CTA = () => (
       <h3>Register Today & start exploring the endless possibilities.</h3>
     </div>
     <div className={styles.ctaBtn}>
-      <button type="button">Get Started</button>
+      <button type="button"><Link href="/">Get Started</Link></button>
     </div>
   </div>
 );

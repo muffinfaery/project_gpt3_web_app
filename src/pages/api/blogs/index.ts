@@ -1,10 +1,10 @@
 import { NextApiResponse, NextApiRequest } from 'next'
-import { blogs } from '@/data'
-import { Blog } from '@/interfaces'
+import { blogs } from '@/data/blogs'
+import { IBlog } from '@/interfaces'
 
 export default function handler(
-  _req: NextApiRequest,
-  res: NextApiResponse<Blog[]>
+  req: NextApiRequest,
+  res: NextApiResponse<IBlog[]>
 ) {
   return res.status(200).json(blogs)
 }

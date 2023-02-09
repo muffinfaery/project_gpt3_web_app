@@ -1,12 +1,12 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { blogs } from '@/data'
-import type { Blog, ResponseError } from '@/interfaces'
+import { blogs } from '@/data/blogs'
+import type { IBlog, IResponseError } from '@/interfaces'
 
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Blog | ResponseError>
+  res: NextApiResponse<IBlog | IResponseError>
 ) {
 
   const { query } = req

@@ -36,7 +36,7 @@
 }
 
 .blogPost_article {
-    background: var(--color-footer);
+    background: var(--color-blog);
     padding: 2rem;
 }
 
