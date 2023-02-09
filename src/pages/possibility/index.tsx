@@ -11,7 +11,7 @@ export default function Possibility() {
       >
         <div className={styles.possibilityImage}>
           <Image
-            src="/possibility.png"
+            src="/possibility.avif"
             alt="Possibility"
             width={2184}
             height={2431}

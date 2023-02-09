@@ -23,7 +23,7 @@ export default function Home() {
 
         <div className={styles.landingContent__people}>
           <Image
-            src="/people.png"
+            src="/people.avif"
             alt="People Image"
             width={181.79}
             height={38}
@@ -35,7 +35,7 @@ export default function Home() {
 
       <div className={styles.landingImage}>
         <Image
-            src="/ai.png"
+            src="/ai.avif"
             alt="AI Face Image"
             width={824}
             height={834}

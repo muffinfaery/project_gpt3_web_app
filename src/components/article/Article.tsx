@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './article.module.css';
 import Image from 'next/image';
-import { Blog } from '@/interfaces'
+import { IBlog } from '@/interfaces'
 import Link from 'next/link';
 
-const Article = (props: Blog) => {
+const Article = (props: IBlog) => {
   const { id, imageUrl, date, description, title } = props;
   
   return (
