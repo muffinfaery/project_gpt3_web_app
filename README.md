@@ -14,7 +14,7 @@ Next gen image formatting, PRPL pattern and the works can turn that static page 
 
 ![Before and After](https://i.imgur.com/h5ljNMo.png)
 
-Before and after resource load where I took some liberties and moved most of it off the initial page and onto subsequent pages but could have achieved a similar result living it all on one page and using the intersection observer api again. That being said we are down from 3.9MB of JS resources to just 279kb on initial page load and above the fold in almost the same amount of requests, just imagine throwing all this over http 2!
+Before and after resource load where I took some liberties and moved most of it off the initial page and onto subsequent pages but could have achieved a similar result leaving it all on one page and using the intersection observer api again. That being said we are down from 3.9MB of JS resources to just 279kb on initial page load and above the fold in almost the same amount of requests, just imagine throwing all this over http 2!
 
 ![Before](https://i.imgur.com/f1VB98b.png)
 ![After](https://i.imgur.com/L7Jm1SC.png)
@@ -23,11 +23,11 @@ Before and after resource load where I took some liberties and moved most of it 
 I would love to add several more things to this application before calling it "done". In order of importance:
 
 1. Auto Scripts for linting and testing to be run automatically with Husky
-2. Some simple filters/loops could be unit tested with Jest
+2. Some simple filters/loops inside the code could and should be unit tested with Jest
 3. Deploy it with Vercel automatically
-4. Add back older image formats and use the size attribute better with built in next optimizations
+4. Add back older image formats and use the size attribute better with built in next optimizations. (Ie is dead but safari still finds ways ...)
 5. Add Sign Up/Sign in Functionality
-6. Add an "Explore Library" feature as there is one missing link on the site and I did not know what to do with it
+6. Add an "Explore Library" feature as there is one missing link on the site and I did not know what to do with it feature wise
 7. Answer some of the sample todo's I have left around the code around some dynamic content loading
 
 ## Getting Started
