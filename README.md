@@ -14,7 +14,7 @@ Next gen image formatting, PRPL pattern and the works can turn that static page 
 
 ![Before and After](https://i.imgur.com/h5ljNMo.png)
 
-Before and after resource load where we took some liberties and moved most of it off the initial page and onto subsequent pages but could have achieved a similar result living it all on one page and using the intersection observer api again. That being said we are down from 3.9MB of JS resources to just 279kb on initial page load and above the fold in almost the same amount of requests, just imagine throwing all this over http 2!
+Before and after resource load where I took some liberties and moved most of it off the initial page and onto subsequent pages but could have achieved a similar result living it all on one page and using the intersection observer api again. That being said we are down from 3.9MB of JS resources to just 279kb on initial page load and above the fold in almost the same amount of requests, just imagine throwing all this over http 2!
 
 ![Before](https://i.imgur.com/f1VB98b.png)
 ![After](https://i.imgur.com/L7Jm1SC.png)
