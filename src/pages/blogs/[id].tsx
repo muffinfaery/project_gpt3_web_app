@@ -27,7 +27,7 @@ export default function BlogPage() {
 
   const { imageUrl, date, title, body } = data
   return (
-    <div className={[styles.blog, 'section__padding'].join(' ')} id="blogPage">
+    <div className={[styles.blog, 'section__padding'].join(' ')} id="blogPage" data-cy="blog">
       <div className={styles.blogHeading}>
         <div className="gradient__text">
           <h1>{title}</h1>

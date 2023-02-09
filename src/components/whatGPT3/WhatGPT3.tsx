@@ -17,7 +17,7 @@ const WhatGPT3 = () => {
 
   return (
     <>
-      <div className="section__margin">
+      <div className="section__margin" data-cy="whatGPT3">
         <div className="pageHeading">
           <h1 className="gradient__text">
             The possibilities are beyond your imagination

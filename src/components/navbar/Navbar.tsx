@@ -32,15 +32,15 @@ const Navbar = () => {
       </div>
       <div className={styles.navbarMenu}>
         {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
+          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} data-cy="navbar_navbarMenu_icon"/>
+          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} data-cy="navbar_navbarMenu_icon"/>}
         {toggleMenu && (
-        <div className={[styles.navbarMenu_container, styles.scaleUpCenter].join(" ")}>
+        <div className={[styles.navbarMenu_container, styles.scaleUpCenter].join(" ")} data-cy="navbar_navbarMenu">
           <div>
-            <p><Link href="/">Get Started</Link></p>
-            <p><Link href="/about">What is GPT3?</Link></p>
-            <p><Link href="/possibility">Possibility</Link></p>
-            <p><Link href="/blogs">Blog</Link></p>
+            <p><Link href="/" onClick={() => setToggleMenu(false)}>Get Started</Link></p>
+            <p><Link href="/about" onClick={() => setToggleMenu(false)}>What is GPT3?</Link></p>
+            <p><Link href="/possibility" onClick={() => setToggleMenu(false)}>Possibility</Link></p>
+            <p><Link href="/blogs" onClick={() => setToggleMenu(false)}>Blog</Link></p>
           </div>
           <div className={styles.navbarMenu_containerLinksSign}>
             <p>Sign in</p>

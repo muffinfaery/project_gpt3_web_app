@@ -22,6 +22,7 @@ const Callout = () => {
       <div
         className={[styles.features, 'section__padding'].join(' ')}
         id="features"
+        data-cy="callout"
       >
         <div className={styles.featuresHeading}>
           <h1 className="gradient__text">

@@ -8,7 +8,7 @@ const Article = (props: Blog) => {
   const { id, imageUrl, date, description, title } = props;
   
   return (
-  <div className={styles.blogContainer_article}>
+  <div className={styles.blogContainer_article} data-cy="blogContainer_article">
     <div className={styles.blogContainer_articleImage}>
       <Image
           src={imageUrl}

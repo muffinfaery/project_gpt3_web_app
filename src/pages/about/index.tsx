@@ -3,6 +3,11 @@ import { WhatGPT3 } from '@/components/whatGPT3'
 import dynamic from 'next/dynamic'
 import { useInView } from 'react-intersection-observer';
 
+// TODO Ticket https://hosted.gitlab.tickets.com/12345
+// Because of Intersection Observer API and Dynamic loading
+// this really needs a loading state other than null
+// See index.ts at root for something similiar with footer
+// Would really like to tweak this to make it feel a bit smoother
 const Callout = dynamic(() => import('@/components/callout'), {
   loading: () => null,
   ssr: false,

@@ -1,8 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GPT3 UI Project
+
+## Introduction
+
+This is a heavy modification of a base project started by [Adrian Hajdin](https://github.com/adrianhajdin). I really enjoyed the [figma design](https://www.figma.com/file/lz9lLpFHMxHm2odnwM3R0z/gpt3) but the "finished" project really just lacked a number of core things I would expect from a modern experience.
+
+A truly modern web application spans multiple pages and will be pulling data, images and more across the wire to deliver a smooth and performant experience to the end user. On top of that missing type safety for compilation and a lack of better folder structure for preprocessors or other platform tooling in the future. 
+
+That being said Adrian finally got me off my butt to just sit down and actually commit something using the tools I love to the open web. While this still needs more work Im just going to expand upon it for a bit in my free time.
+
+## What Next?
+
+I would love to add several more things to this application before calling it "done". In order of importance:
+
+1. Auto Scripts for linting and testing to be run automatically with Husky
+2. Some simple filters/loops could be unit tested with Jest
+3. Deploy it with Vercel automatically
+4. Add Sign Up/Sign in Functionality
+5. Add an "Explore Library" feature as there is one missing link on the site and I did not know what to do with it
+6. Answer some of the sample todo's I have left around the code around some dynamic content loading
 
 ## Getting Started
 
-First, run the development server:
+First, make sure to get all those great packages you will need
+
+```bash
+npm install
+```
+
+Then, run the development server using the tool of choice:
 
 ```bash
 npm run dev
@@ -14,25 +39,13 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Need to see some tests?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Make sure the development server is running and then feel free to open up cypress for a spin.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+npm run cypress
+# or
+npm run cypress:test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
